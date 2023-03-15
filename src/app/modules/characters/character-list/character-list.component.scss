@@ -1,0 +1,45 @@
+article{
+  width: 100%;
+  max-height: 90vh;
+  $h: 90vh;
+  overflow: hidden;
+  background: hsl(213, 51%, 26%);
+  background: linear-gradient(0deg, hsl(213, 51%, 26%) 0%, hsla(0, 0%, 0%, 1) 12%, hsla(0, 3%, 15%, 1) 100%, hsla(0, 0%, 0%, 1) 100%, hsla(218, 18%, 20%, 1) 100%, hsla(0, 0%, 0%, 1) 100%);
+  background: -moz-linear-gradient(0deg, hsl(213, 51%, 26%) 0%, hsla(0, 0%, 0%, 1) 12%, hsla(0, 3%, 15%, 1) 100%, hsla(0, 0%, 0%, 1) 100%, hsla(218, 18%, 20%, 1) 100%, hsla(0, 0%, 0%, 1) 100%);
+  background: -webkit-linear-gradient(0deg, hsl(213, 51%, 26%) 0%, hsla(0, 0%, 0%, 1) 12%, hsla(0, 3%, 15%, 1) 100%, hsla(0, 0%, 0%, 1) 100%, hsla(218, 18%, 20%, 1) 100%, hsla(0, 0%, 0%, 1) 100%);
+
+  display: flex;
+  flex-direction: row;
+
+  span {
+    position: relative;
+    height: $h;
+    .thor_bg{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+    .storm_bg{
+      $h_storm : 60vh;
+      //background-image: url('^assets/images/Thor_v1.png');
+      height: $h_storm;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: calc(#{$h_storm} / 6);
+    }
+  }
+
+  .container_catalog{
+    box-sizing: border-box;
+    height: $h;
+    width: inherit;
+    border: 5px solid #203F64FF;
+    filter: blur(8px);
+  }
+}
+
+

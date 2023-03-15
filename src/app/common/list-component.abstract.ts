@@ -1,9 +1,8 @@
 import {Injectable, OnInit} from "@angular/core";
 import {ServiceAbstract} from "./service.abstract";
-import {error} from "@angular/compiler-cli/src/transformers/util";
 
 @Injectable()
-export abstract class AbstractListComponent<T> implements OnInit {
+export abstract class ListComponentAbstract<T> implements OnInit {
   element!: T;
   model: T [] = [];
   listSize!: number;
@@ -19,7 +18,7 @@ export abstract class AbstractListComponent<T> implements OnInit {
     this.service.getListData()
       .subscribe({
         next: model => {
-          this.model = model["data"]["result"];
+          this.model = model['data']['results'];
           this.listSize = model["data"]["total"];
           this.postList();
         },

@@ -1,4 +1,4 @@
-export class CharactersModel {
+export class CharacterModel {
   id!: number;
   name!: string;
   description!: string;
