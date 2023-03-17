@@ -1,4 +1,21 @@
+$header: 4rem;
 .container_main {
   box-sizing: border-box;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  .header{
+    height: $header;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .body{
+    max-height: 100%;
+    position: relative;
+    z-index: 0;
+    top: $header;
+  }
 }

@@ -1,7 +1,7 @@
 article{
   width: 100%;
-  max-height: 90vh;
-  $h: 90vh;
+  height: fit-content;
+  $h: 100%;
   overflow: hidden;
   background: hsl(213, 51%, 26%);
   background: linear-gradient(0deg, hsl(213, 51%, 26%) 0%, hsla(0, 0%, 0%, 1) 12%, hsla(0, 3%, 15%, 1) 100%, hsla(0, 0%, 0%, 1) 100%, hsla(218, 18%, 20%, 1) 100%, hsla(0, 0%, 0%, 1) 100%);
@@ -15,7 +15,7 @@ article{
     position: relative;
     height: $h;
     .thor_bg{
-      height: 100%;
+      height: 98vh;
       margin: 0;
       padding: 0;
       z-index: 0;
@@ -35,7 +35,7 @@ article{
 
   .container_catalog{
     box-sizing: border-box;
-    height: $h;
+    min-height: $h;
     width: inherit;
     border: 5px solid #203F64FF;
     filter: blur(8px);

@@ -1,6 +1,11 @@
 nav {
-  height: 10vh;
+  box-sizing: border-box;
+  height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
+  background-color: #750409;
+  box-shadow: inset 2px 2px 10px rgba(120, 120, 120, .4), inset -3px -3px 10px rgba(192, 190, 190, 0.4);
+  display: flex;
+  align-items: center;
 }
